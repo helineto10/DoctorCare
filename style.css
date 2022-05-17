@@ -588,16 +588,11 @@ footer .social-links {
         opacity: 0.6;
     }
 
-    nav#navigation.scroll .menu ul li a {
-        color: var(--brand-light-2);
-        opacity: 0.6;
-    }
-
-    nav#navigation .menu ul li a.active,
-    nav#navigation .menu ul li a:hover {
+    nav#navigation .menu li a.active,
+    nav#navigation .menu li a:hover {
         opacity: 1;
         font-weight: 700;
-        transition: opacity 800ms;
+        transition: opacity 400ms;
     }
 
     nav#navigation .menu ul li a::after {
@@ -615,6 +610,11 @@ footer .social-links {
         transition: 200ms;
     }
 
+    nav#navigation.scroll .menu ul li a {
+        color: white;
+        opacity: 0.6;
+    }
+
     nav#navigation.scroll .menu ul li a::after {
         background-color: white;
     }
@@ -625,7 +625,8 @@ footer .social-links {
         width: 100%;
     }
 
-    nav#navigation.scroll .menu ul li a.active nav#navigation.scroll .menu ul li a:hover {
+    nav#navigation.scroll .menu ul li a.active, 
+    nav#navigation.scroll .menu ul li a:hover {
         opacity: 1;
         border-color: white;
     }
